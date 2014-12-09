@@ -1,28 +1,13 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# タビノタネ
 
-Things you may want to cover:
+**自分が知っている場所しか目的地が思い浮かばない**  
+**急な休みが取れて旅行に行きたい人** 向けの  
+**タビノタネ** という **ツアー推薦サービス** です。  
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+これは、**シンプルな条件でツアーを検索** でき、   
+**楽天トラベルのようなWebサービスや旅行代理店のカウンター** とは違って、   
+**エリアを指定せずに、思いつかないような場所や変わったプランを推薦する機能** が備わっています。  
+  
+--
+This software is released under the MIT License

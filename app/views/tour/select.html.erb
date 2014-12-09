@@ -1,10 +1,42 @@
-<div id="container">
-  <div class="logo">
+<script>
+var count = 0;
+function rotate() {
+  var elem = document.getElementById('loading');
+  elem.style.MozTransform = 'scale(0.5) rotate('+count+'deg)';
+  elem.style.WebkitTransform = 'scale(0.5) rotate('+count+'deg)';
+  if (count==360) { count = 0 }
+  count+=45;
+  window.setTimeout(rotate, 100);
+}
+window.setTimeout(rotate, 100);
+
+function show() {
+  var elem = document.getElementById('target');
+  elem.className = "visible"
+}
+</script>
+
+<div class="wrapper">
+  <div class="title">
     <div><%= image_tag('which.png', :alt => 'Which do you lile?') %></div>
   </div>
+  
+  <div class="pic">
+    <%= link_to image_tag(@image_l.path, :size => "352x352"), '/tour?imgid=' + @image_l.image_id, {:id => "left", :onclick => "show();", data: {no_turbolink: true}} %>
 
-  <div class="button">
-  <%= link_to image_tag('town.png', :alt => 'Town'), '/tour?imgid=town' %>
-  <%= link_to image_tag('sea.png', :alt => 'Sea'), '/tour?imgid=sea' %>
+    <div id="target" class="hidden">
+      <div id="loading">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        <div class="bar7"></div>
+        <div class="bar8"></div>
+      </div>
+    </div>
+    
+    <%= link_to image_tag(@image_r.path, :size => "352x352"), '/tour?imgid=' + @image_r.image_id, {:id => "right", :onclick => "show();", data: {no_turbolink: true}} %>
   </div>
 </div>
