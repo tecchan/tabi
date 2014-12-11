@@ -1,13 +1,6 @@
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-# タビノタネ
+require File.expand_path('../config/application', __FILE__)
 
-**自分が知っている場所しか目的地が思い浮かばない**  
-**急な休みが取れて旅行に行きたい人** 向けの  
-**タビノタネ** という **ツアー推薦サービス** です。  
-
-これは、**シンプルな条件でツアーを検索** でき、   
-**楽天トラベルのようなWebサービスや旅行代理店のカウンター** とは違って、   
-**エリアを指定せずに、思いつかないような場所や変わったプランを推薦する機能** が備わっています。  
-  
---
-This software is released under the MIT License
+Rails.application.load_tasks
