@@ -16,6 +16,11 @@
 //= require_tree .
 //
 //= require jquery-1.11.1.min
+<<<<<<< HEAD
 //= require jquery.flexslider
 //= require jquery.powertip
 //= require jquery.instagram
+=======
+//= require jquery.darktooltip.js
+//= require jquery.flexslider
+>>>>>>> 1595fa4bb2b34c9cf425882631a17b135b99974a
