@@ -1,8 +1,6 @@
 class TourController < ApplicationController
   before_filter :set_request
 
-  CACHE_EXPIRE = 1.hour
-
   def select
     # get diffrent two images
     begin
@@ -34,18 +32,20 @@ class TourController < ApplicationController
   end
 
   def detail
-    cityCode = params[:citycode]
-    ap cityCode
-    destination = Rails.cache.fetch(cityCode, expires_in: CACHE_EXPIRE) do
-      tour = AbroadTour.new
-      @tourDetail= tour.get_tour(id: params[:tourid])
-      lat = @tourDetail["dest"]["lat"]
-      lng = @tourDetail["dest"]["lng"]
-      city = @tourDetail["dest"]["name"]
-      cityCode = @tourDetail["dest"]["code"]
-      country = @tourDetail["dest"]["country"]["name"]
-      Destination.new(city: city, cityCode: cityCode, country: country, lat: lat, lng: lng)
-    end
+    tour = AbroadTour.new
+    @tourDetail= tour.get_tour(id: params[:tourid])
+    lat = @tourDetail["dest"]["lat"]
+    lng = @tourDetail["dest"]["lng"]
+    city = @tourDetail["dest"]["name"]
+    cityCode = @tourDetail["dest"]["code"]
+    country = @tourDetail["dest"]["country"]["name"]
+    destination = Destination.new(city: city, cityCode: cityCode, country: country, lat: lat, lng: lng)
+    ap destination
+    #weather = destination.get_weather
+    #@temp_max = kelvin_to_celsius(weather["main"]["temp_max"])
+    #@temp_min = kelvin_to_celsius(weather["main"]["temp_min"])
+    #@weather_icon = weather["weather"][0]["icon"]
+    #@photos = destination.get_instagram_photos()
     @hashtag = destination.get_hashtag_for_instagram()
   end
 

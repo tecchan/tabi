@@ -19,4 +19,3 @@
 //= require jquery.flexslider
 //= require jquery.powertip
 //= require jquery.instagram
-//= require jquery.leanModal.min
