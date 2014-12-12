@@ -9,9 +9,3 @@
 **楽天トラベルのようなWebサービス**とは違って、   
 **思いつかないような場所を教えてくれる機能**が備わっています。  
   
---
-<<<<<<< HEAD
-This software is released under the MIT License, see [LICENSE.txt]
-=======
-This software is released under the MIT License, see [LICENSE.txt](https://github.com/tnumata3632/RakuTabi/blob/master/LICENSE.txt).
->>>>>>> 1595fa4bb2b34c9cf425882631a17b135b99974a
