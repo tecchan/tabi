@@ -1,7 +1,7 @@
 <script>
 var count = 0;
 function rotate() {
-  var elem = document.getElementById('loading');
+  22222ｗｓ2var elem = document.getElementById('loading');
   elem.style.MozTransform = 'scale(0.5) rotate('+count+'deg)';
   elem.style.WebkitTransform = 'scale(0.5) rotate('+count+'deg)';
   if (count==360) { count = 0 }
@@ -24,7 +24,7 @@ function show() {
           <%= image_tag('logo_s.png', :alt => 'タビノタネ') %>
         </a>
       </div>
-        
+
       <div class="breadcrumb">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x" style="color: #fff;"></i>
@@ -51,29 +51,30 @@ function show() {
   </div>
 
   <div class="title">
-    <div class="question">好きな写真を選んでください</div>
+    <div class="question">動物に生まれ変わるとしたら、どっちがいい？</div>
 
     <div class="icon">
-      <div class="icon_refresh"><a href="javascript:location.reload(true);"><i class="fa fa-refresh fa-fw"></i>どちらも好きじゃない</a></div>
-    </div>     
-  </div>
-  
-  <div class="pic">
-    <%= link_to image_tag(@image_l.path, :class => "circle"), '/tour?imgid=' + @image_l.image_id, {:onclick => "show();", data: {no_turbolink: true}} %>
-
-    <div id="target" class="hidden">
-      <div id="loading">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div class="bar4"></div>
-        <div class="bar5"></div>
-        <div class="bar6"></div>
-        <div class="bar7"></div>
-        <div class="bar8"></div>
-      </div>
+      <div class="icon_refresh"><a href="/question11"><i class="fa fa-refresh fa-fw"></i>他の質問を選ぶ</a></div>
     </div>
-    
-    <%= link_to image_tag(@image_r.path, :class => "circle"), '/tour?imgid=' + @image_r.image_id, {:onclick => "show();", data: {no_turbolink: true}} %>
   </div>
+
+  <div class="pic">
+    <%= link_to image_tag('q07_l.png', :class=>"circle"), '/selection' %>
+
+     <div id="target" class="hidden">
+       <div id="loading">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+         <div class="bar4"></div>
+         <div class="bar5"></div>
+         <div class="bar6"></div>
+         <div class="bar7"></div>
+         <div class="bar8"></div>
+       </div>
+     </div>
+
+    <%= link_to image_tag('q07_r.png', :class=>"circle"), '/selection' %>
+
+   </div>
 </div>
