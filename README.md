@@ -9,5 +9,8 @@
 **楽天トラベルのようなWebサービス**とは違って、   
 **思いつかないような場所を教えてくれる機能**が備わっています。  
   
+<<<<<<< HEAD
 --
 This software is released under the MIT License, see [LICENSE.txt]
+=======
+>>>>>>> b03294bc071175bccf51e5812684b619087c318a
