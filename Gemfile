@@ -34,7 +34,7 @@ gem 'spring',        group: :development
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'pry'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
@@ -46,9 +46,6 @@ gem 'httpclient', '~> 2.5.3.3'
 gem 'concurrent-ruby'
 
 gem 'awesome_print'
-<<<<<<< HEAD
 
 gem 'instagramjs-rails'
 
-=======
->>>>>>> 1595fa4bb2b34c9cf425882631a17b135b99974a

@@ -30,6 +30,7 @@ GEM
     arel (5.0.1.20140414130214)
     awesome_print (1.2.0)
     builder (3.2.2)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -43,11 +44,8 @@ GEM
     hike (1.2.3)
     httpclient (2.5.3.3)
     i18n (0.6.11)
-<<<<<<< HEAD
     instagramjs-rails (0.3.1)
       railties (>= 3.1)
-=======
->>>>>>> 1595fa4bb2b34c9cf425882631a17b135b99974a
     jbuilder (2.1.3)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -58,10 +56,15 @@ GEM
     libv8 (3.16.14.7)
     mail (2.6.1)
       mime-types (>= 1.16, < 3)
+    method_source (0.8.2)
     mime-types (2.3)
     minitest (5.4.2)
     multi_json (1.10.1)
     pg (0.17.1)
+    pry (0.10.0.rc1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -98,6 +101,7 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    slop (3.6.0)
     spring (1.1.3)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -130,13 +134,11 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   concurrent-ruby
   httpclient (~> 2.5.3.3)
-<<<<<<< HEAD
   instagramjs-rails
-=======
->>>>>>> 1595fa4bb2b34c9cf425882631a17b135b99974a
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  pry
   rails (= 4.1.6)
   rails_12factor
   sass-rails (~> 4.0.3)

@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  *
- *= require darktooltip
  *= require flexslider
  *= require font-awesome
  *= require jquery.powertip

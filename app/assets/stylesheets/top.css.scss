@@ -1,5 +1,4 @@
 #index .icon { display: inline-block; }
-<<<<<<< HEAD
 #index .icon a {
   width: auto;
   height: 16px;
@@ -15,11 +14,6 @@
 }
 #index .icon a:hover  { opacity: 1; }
 #index .icon img { padding-right: 5px; }
-=======
-#index .icon_plane a { width: auto; height: 16px; line-height: 16px; vertical-align: top; opacity: 0.8; z-index: 10; cursor: pointer; text-decoration: none !important; position: absolute; top: 55px; right: 70px; z-index: 10; }
-#index .icon_plane a:hover  { opacity: 1; }
-#index .icon_plane a  { color: #fff; }
->>>>>>> 1595fa4bb2b34c9cf425882631a17b135b99974a
 
 #index .main {
   min-width: 800px;
